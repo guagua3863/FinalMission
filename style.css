@@ -124,7 +124,7 @@ header li a{
 }
 }
 
-@media(max-width: 376px){
+@media(max-width: 1000px){
 	.heroshot .left img{
 	display: block;
     aspect-ratio: 960/834; /*比例裁切*/
@@ -196,7 +196,7 @@ header li a{
 	}
 }
 
-@media(max-width: 376px){
+@media(max-width: 1000px){
 	.imgbox img{
 		max-width: 100%;
 		max-height: 100%;
@@ -219,7 +219,7 @@ header li a{
 	}
 }
 
-@media(max-width: 375px){
+@media(max-width: 1000px){
 	.artibox{
 		margin-left: 12px;
 		margin-right: 12px;
@@ -355,13 +355,13 @@ body{
 }
 
 .article img{
-	width: 416px;
+	max-width: 416px;
 	height: 200px;
 	margin-bottom: 16px;
 }
-@media(max-width:376px){
+@media(max-width:1000px){
 	.article img{
-		width: 351px;
+		max-width: 351px;
 		height: 200px;
 		margin-bottom: 16px;
 	}
