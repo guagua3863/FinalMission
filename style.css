@@ -346,7 +346,6 @@ header li a{
 }
 
 body{
-	width: 100vw;
 	background: #FBFBFB;
 	display: flex;
 	flex-direction: column;
@@ -360,7 +359,6 @@ body{
 	display: block;
 	max-width: 1920px;
 	border: 1px solid var(--bordergray);
-	margin-right: 0;
 }
 .article{	
 	max-width: 1320px; /* 416*3 +  24*3 */
@@ -380,24 +378,17 @@ body{
 
 .article ul{
 	display: flex;
-<<<<<<< HEAD
-	justify-content: flex-start;
-=======
 	justify-content: left;
-	margin-top: 40px;
-	margin-bottom: 40px;
->>>>>>> parent of 4ffb0bd (BLOG頁已完成(待測試))
 	flex-wrap: wrap;
 	align-items: stretch;
-	gap: 24px;
-	max-width: 1320px; /* 416*3 + 24*3 */
-	margin-left: auto;
- 	margin-right: auto;
+	padding-left: 0;
 }
 .article li{
 	display: flex;
 	flex-direction: column;
 	width: 416px;
+	padding-left: 12px;
+	padding-right: 12px;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -418,10 +409,13 @@ body{
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-top: 24px;
 	}
 
 	.article li{
 		width: 351px;
+		padding-left: 0;
+		padding-right: 0;
 		margin-top: 16px;
 		margin-bottom: 16px;
 	}
@@ -502,4 +496,117 @@ body{
 	color: #FFFFFF;
 	background: #7b7b7b;
 	border: none;
+}
+
+.article .pageList{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 80px;
+	max-width: 328px;
+	background: #FFFFFF;
+	border-radius: 20px;
+
+}
+
+.article .pageList li{
+	width: auto;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.article .pageList .pagenum{
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.article .pageList svg{
+	width: 24px;
+	height: 24px;
+}
+
+.article .pageList a{
+	display: block;
+	text-decoration: none;
+	color: var(--contentgray);
+	font-weight: 500;
+}
+.article .alignList{
+	display: flex;
+	justify-content: center;
+}
+
+.pageList .current a{
+	color: var(--tagblue);
+}
+
+@media(max-width:1000px){
+	.article .pageList{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0;
+		margin-bottom: 64px;
+
+	}
+	.article .pageList li{
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Noto Sans TC", sans-serif;
+}
+
+footer .contactInfo{
+	display: flex;
+	align-items: center;
+	height: 208px;
+}
+
+footer .contactInfo .mail{
+
+	font-weight: 500;
+	font-size: 32px;
+	width: 1036px;
+	margin-right: 24px;
+}
+
+footer .contactInfo .share{
+	display: flex;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
+}
+
+footer .copyright{
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.fw500{
+	font-weight: 500;
+}
+
+@media(max-width:1000px){
+	footer .contactInfo{
+		display: none;
+	}
 }
