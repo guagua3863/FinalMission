@@ -613,7 +613,7 @@ footer .copyright{
 	}
 }
 
-@media(max-width:1296px){
+@media(max-width:1320px){
 	footer .contactInfo{
 	width: 856px; /* 416*2+24*/
 	}
