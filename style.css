@@ -576,8 +576,11 @@ footer{
 }
 
 footer .contactInfo{
+	width: 1296px; /*416*3+24*2*/
 	display: flex;
-	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items:center;
 	height: 208px;
 }
 
@@ -585,7 +588,6 @@ footer .contactInfo .mail{
 
 	font-weight: 500;
 	font-size: 32px;
-	width: 1036px;
 	margin-right: 24px;
 }
 
@@ -608,5 +610,11 @@ footer .copyright{
 @media(max-width:1000px){
 	footer .contactInfo{
 		display: none;
+	}
+}
+
+@media(max-width:1296px){
+	footer .contactInfo{
+	width: 856px; /* 416*2+24*/
 	}
 }
